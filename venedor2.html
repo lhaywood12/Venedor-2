@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/a6ddc4e9e0.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style2.css">
+    <title>Venedor</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <nav class="topNav btn-group">
+                        <button type="button" class="btn btn-link nav-button" id="myWishlist">My Wishlist</button>
+                        <button type="button" class="btn btn-link nav-button" id="myAccount">My Account</button>
+                        <button type="button" class="btn btn-link nav-button" id="shoppingCart">Shopping Cart</button>
+                        <button type="button" class="btn btn-link nav-button" id="checkout">Checkout</button>
+                    </nav>
+                </div>
+                <div class="col-md-6">
+                    <p class="login">Welcome visitor you can <span class="highlight">login</span> or <span class="highlight">create an account</span>.</p>
+                </div>
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="logo">
+                        <a href="index.html"><span class="circle">Ve</span>nedor<span class="highlight">.</span></a>
+                        
+                    </h1>
+                    <nav id="mainNav">
+                        <ul class="nav justify-content-between">
+                            <li class="nav-item"><a href="#link">fashion</a></li>
+                            <li class="nav-item"><a href="#link">electronics</a></li>
+                            <li class="nav-item"><a href="#link">gifts</a></li>
+                            <li class="nav-item"><a href="#link">books</a></li>
+                            <li class="nav-item"><a href="#link">at home</a></li>
+                            <li class="nav-item"><a href="#link">music</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-6">
+                    <div id="shoppingDiv">
+                        <div class="shopping-buttons">
+                            <button type="button" class="btn" id="currencyBtn">US Dollar</button>
+                            <button type="button" class="btn" id="langBtn">English</button>
+                            <button type="button" class="btn" id="cartBtn"><span id="cartItems">0</span> item(s) - $<span id="cartSubTotal">0.00</span></button>
+                        </div>
+                        <input type="search" placeholder="Search here..." class="item-search"><!-- icon here-->
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+    </header>
+    <main class="main" id="main">
+        <section class="section home-page">
+            <section class="section jumbotron jumbotron-fluid hero">
+                <!-- hero.png -->
+            </section>
+
+            <section class="section features container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="media/free-shipping.png" alt="free shipping" class="img-fluid featured-img">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="media/sale.png" alt="sale" class="img-fluid featured-img">
+                        
+                    </div>
+                    <div class="col-md-4">
+                        <img src="media/new-arrivals.png" alt="new arrivals" class="img-fluid featured-img">
+                        
+                    </div>
+                </div>
+            </section>
+
+            <section class="section latest container">
+                <div class="row">
+                    <div class="col-md-10">
+                        <h2 class="latest-header">latest</h2>
+                        <p class="latest-text">Buy discount items from the lastest collection of world brands.</p>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="toggle-buttons">
+                            <button class="toggle-btn">&lt;</button><button class="toggle-btn">&gt;</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- latest -->
+                <div class="row products1" id="products1"></div>
+            </section>
+
+            <section class="section welcome container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="welcome-header">Welcome to Venedor</h2>
+                        <p class="welcometext">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, aperiam culpa dolorem optio quas doloremque recusandae vel suscipit doloribus porro velit repellat! Doloremque aperiam non natus. Vel nesciunt ea accusantium qui quia error, dignissimos quisquam magni officia, enim laborum quod!</p>
+                        <p class="welcometext">Est alias labore dolores a odit! Suscipit veritatis dolore nesciunt laborum obcaecati tenetur accusantium doloremque cum. Veniam fugit quas sapiente, enim quae a quibusdam voluptate. Optio blanditiis velit, quis debitis quo unde nesciunt dicta architecto beatae. Asperiores velit nisi unde?</p>
+                        <p><a href="#link">Buy Venedor Theme!</a></p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="media/platforms.png" alt="platforms" class="img-fluid platforms-img">
+                    </div>
+                </div>
+            </section>
+
+            <section class="section bestsellers container">
+                <div class="row">
+                    <div class="col-md-10">
+                        <h2 class="bestsellers-header">Bestsellers</h2>
+                        <p class="bestsellers-text">Special offers and biggest discounts for the most popular products.</p>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="toggle-buttons">
+                            <button class="toggle-btn">&lt;</button><button class="toggle-btn">&gt;</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- bestsellers -->
+                <div class="row" id='products2'></div>
+            </section>
+            
+            <section class="section manufacturers container">
+                <div class="row">
+                    <div class="col-md-10">
+                        <h2 class="manufacturers-header">Manufacturers</h2>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="toggle-buttons">
+                            <button class="toggle-btn">&lt;</button><button class="toggle-btn">&gt;</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row manufacturers-icons">
+                    <div class="col-md-2">
+                        <img src="https://via.placeholder.com/100x50" alt="placeholder img" class="img-fluid">  
+                    </div>
+                    <div class="col-md-2">
+                        <img src="https://via.placeholder.com/100x50" alt="placeholder img" class="img-fluid">  
+                    </div>
+                    <div class="col-md-2">
+                        <img src="https://via.placeholder.com/100x50" alt="placeholder img" class="img-fluid">  
+                    </div>
+                    <div class="col-md-2">
+                        <img src="https://via.placeholder.com/100x50" alt="placeholder img" class="img-fluid">  
+                    </div>
+                    <div class="col-md-2">
+                        <img src="https://via.placeholder.com/100x50" alt="placeholder img" class="img-fluid">  
+                    </div>
+                    <div class="col-md-2">
+                        <img src="https://via.placeholder.com/100x50" alt="placeholder img" class="img-fluid">  
+                    </div>
+                </div>
+            </section>     
+        </section> 
+
+        <!--checkout page-->
+
+       <section class="section checkout-page d-none">
+           <div class="bar">
+               <div class="container">
+                   <div class="row">
+                       <div class="col">
+                           <p class="bar-text">Home &gt; Checkout</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <section class="section checkout-section">
+               <div class="container">
+                   <div class="row">
+                       <div class="col-md-6">
+                           <h2 class="checkout-header">Checkout</h2>
+                           <p class="checkout-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae similique corrupti doloribus aliquam ut enim.</p>
+                       </div>
+                       <div class="col-md-6">
+                           <p class="checkout-item-count"><span id="checkoutItemCount"></span>
+                            </p>
+                       </div>
+                   </div>
+
+                   <div class="row">
+                       <div class="col">
+                           <table class="table" id="table">
+                               <tr class="table-headers">
+                                   <td>product name</td>
+                                   <td>product code</td>
+                                   <td>unit price</td>
+                                   <td>quantity</td>
+                                   <td>subtotal</td>
+                               </tr>
+
+                               <tbody id="tbody"></tbody>
+                               <!--load item-->
+                               <tr class="totals" id="totals">
+                                   <td colspan="4">
+                                       <p class="total-subtotal" id="totalSubtotal">Subtotal:</p>
+                                       <p class="total-shipping" id="totalShipping">Shipping:</p>
+                                       <p class="total-tax" id="total">Tax:</p>
+                                       <p class="total-total" id="totalTotal">Total:</p>
+                                   </td>
+                                   <td class="total-values" id="totalValues">
+                                       <p class="subtotal-value" id="subtotalValue"></p>
+                                       <p class="shipping-value" id="shippingValue">6.00</p>
+                                       <p class="tax-value" id="taxValue"></p>
+                                       <p class="total-value">$<span id="totalValue"></span></p>
+                                   </td>
+                               </tr>
+                           </table>
+                       </div>
+                   </div>
+
+                   <div class="row">
+                       <div class="col">
+                           <button class="btn btn-secondary confirm-button" id="confirmButton">confirm order</button>
+                       </div>
+                   </div>
+               </div>
+            </section>
+        </section>
+       <!--close checkout page-->
+    </main>
+    <footer class="footer">
+        <section class="section email">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="signup-text">sign up to receive the latest fashion news</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="email-input">
+                            <input type="email" placeholder="Enter your email address" value="" class="email-submission">
+                            <button class="signup-button btn btn-secondary" id="signUpBtn">sign up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section corporate">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="account-list">
+                            <h2 class="account-header">my account</h2>
+                            <ul class="account">
+                                <li><a href="#link">My account</a></li>
+                                <li><a href="#link">Personal information</a></li>
+                                <li><a href="#link">Addresses</a></li>
+                                <li><a href="#link">Discount</a></li>
+                                <li><a href="#link">Orders history</a></li>
+                                <li><a href="#link">Your vouchers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="info-list">
+                            <h2 class="information-header">information</h2>
+                            <ul class="info">
+                                <li><a href="#link">New products</a></li>
+                                <li><a href="#link">Top sellers</a></li>
+                                <li><a href="#link">Specials</a></li>
+                                <li><a href="#link">Manufacturers</a></li>
+                                <li><a href="#link">Suppliers</a></li>
+                                <li><a href="#link">Our stores</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="twitter-div">
+                            <h2 class="twitter-header">from twitter</h2>
+                            <p class="tweet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quasi perspiciatis, aspernatur libero animi perferendis asperiores odio sit cum omnis?</p>
+                            <p class="tweet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium vitae minus repellat quisquam voluptate laboriosam reprehenderit nemo architecto.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="facebook-div">
+                            <div class="row">
+                                <div class="col">
+                                    <h2 class="facebook-header">facebook</h2>
+                                </div>
+                                <div class="col">
+                                    <button class="like-button btn">Like!</button>
+                                </div>
+                            </div>
+                            <div class="row fb-friends1">
+                            </div>
+                            <div class="row fb-friends2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section colophon">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="nav social-icons justify-content-around">
+                            <li class="list-item social-icon"><a href="#link">
+                                <img src="https://via.placeholder.com/20x20" alt="placeholder img" class="img-fluid"></a>
+                            </li>
+                            <li class="list-item social-icon"><a href="#link">
+                                <img src="https://via.placeholder.com/20x20" alt="placeholder img" class="img-fluid"></a>
+                            </li>
+                            <li class="list-item social-icon"><a href="#link">
+                                <img src="https://via.placeholder.com/20x20" alt="placeholder img" class="img-fluid"></a>
+                            </li>
+                            <li class="list-item social-icon"><a href="#link">
+                                <img src="https://via.placeholder.com/20x20" alt="placeholder img" class="img-fluid"></a>
+                            </li>
+                            <li class="list-item social-icon"><a href="#link">
+                                <img src="https://via.placeholder.com/20x20" alt="placeholder img" class="img-fluid"></a>
+                            </li>
+                            <li class="list-item social-icon"><a href="#link">
+                                <img src="https://via.placeholder.com/20x20" alt="placeholder img" class="img-fluid"></a>
+                            </li>
+                            <li class="list-item social-icon"><a href="#link">
+                                <img src="https://via.placeholder.com/20x20" alt="placeholder img" class="img-fluid"></a>
+                            </li>
+                            <li class="list-item social-icon"><a href="#link">
+                                <img src="https://via.placeholder.com/20x20" alt="placeholder img" class="img-fluid"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="colophon-text">&copy;2020 site by satchwerk All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+
+
+    <script src="venedor.js"></script>
+</body>
+</html>
